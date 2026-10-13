@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floor Coverings International of Jacksonville East, FL</title>
+<meta name="description" content="Floor Coverings International of Jacksonville East – carpet, laminate, vinyl, wood and tile flooring with our Mobile Flooring Showroom®. Serving Atlantic Beach, Jacksonville Beach, Jacksonville and Neptune Beach, FL.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-900:#081a2c; --navy:#0f2a44; --navy-2:#173b5e; --navy-3:#21486f;
+    --orange:#f07a2a; --orange-d:#d2621a; --orange-soft:#ffd9bf;
+    --ink:#1d2a36; --muted:#5d6b78; --line:#e3e8ed; --soft:#f3f5f8; --white:#fff;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Open Sans",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+  h1,h2,h3,h4{font-family:Montserrat,Arial,sans-serif;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
+  a{color:var(--navy-2)}
+  img{max-width:100%}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .eyebrow{display:inline-block;font-family:Montserrat;font-weight:700;font-size:12.5px;letter-spacing:.16em;
+           text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+  .eyebrow::before{content:"";display:inline-block;width:28px;height:3px;background:var(--orange);vertical-align:middle;margin-right:10px}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--orange);color:#fff;
+       font-family:Montserrat;font-weight:800;text-decoration:none;padding:15px 26px;border-radius:999px;border:0;cursor:pointer;
+       font-size:15px;letter-spacing:.02em;transition:background .15s, transform .15s}
+  .btn:hover{background:var(--orange-d);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.55)}
+  .btn.ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+  /* Header */
+  header.site{background:var(--navy-900);position:sticky;top:0;z-index:10;border-bottom:3px solid var(--orange)}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+  .brand .logo{background:#fff;border-radius:8px;padding:6px 10px;display:flex}
+  .brand img{height:40px;width:auto;display:block}
+  .brand span{font-family:Montserrat;font-weight:800;font-size:14px;color:#fff;letter-spacing:.06em;text-transform:uppercase}
+  .head-right{display:flex;align-items:center;gap:18px}
+  .head-phone{color:#fff;text-decoration:none;font-family:Montserrat;font-weight:700}
+  .head-phone small{display:block;font-weight:500;font-size:11px;color:var(--orange-soft);letter-spacing:.08em;text-transform:uppercase}
+  header .btn{padding:11px 20px;font-size:14px}
+
+  /* Hero (split) */
+  .hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0 0 0 52%;
+     background:linear-gradient(90deg,var(--navy) 0%,rgba(15,42,68,.55) 35%,rgba(15,42,68,.35) 100%),
+                url("https://floorcoveringsinternational.com/img/upload/jax-bridge-fci-1.jpg") center/cover}
+  .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;
+              padding-top:80px;padding-bottom:88px;align-items:center}
+  .hero h1{font-size:56px;font-weight:900}
+  .hero h1 em{font-style:normal;color:var(--orange)}
+  .hero p.lead{font-size:18px;color:#d7e1ea;max-width:520px}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 36px}
+  .facts{list-style:none;padding:0;margin:0;display:grid;gap:14px;max-width:520px}
+  .facts li{display:flex;gap:14px;align-items:flex-start;font-size:14.5px;color:#d7e1ea}
+  .facts .ic{flex:none;width:34px;height:34px;border-radius:50%;background:rgba(240,122,42,.15);color:var(--orange);
+             display:flex;align-items:center;justify-content:center;font-weight:800;font-family:Montserrat;font-size:14px}
+  .facts b{display:block;color:#fff;font-family:Montserrat;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+
+  /* Form card */
+  .card{background:#fff;color:var(--ink);border-radius:16px;padding:30px;box-shadow:0 24px 60px rgba(0,0,0,.35);
+        border-top:6px solid var(--orange)}
+  .card h2{font-size:24px;color:var(--navy);font-weight:800}
+  .card .sub{color:var(--muted);font-size:14px;margin:-6px 0 18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  label{display:block;font-size:12px;font-weight:700;margin-bottom:5px;color:var(--navy);font-family:Montserrat;letter-spacing:.04em;text-transform:uppercase}
+  input,textarea{width:100%;padding:11px 13px;border:1.5px solid #d3dbe3;border-radius:8px;font:inherit;font-size:15px;background:#fbfcfd}
+  input:focus,textarea:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 3px rgba(240,122,42,.18);background:#fff}
+  textarea{min-height:80px;resize:vertical}
+  .field{margin-bottom:12px}
+  .consent{display:flex;gap:10px;align-items:flex-start;background:var(--soft);border-radius:10px;padding:12px 14px;margin:6px 0 16px}
+  .consent input{width:18px;height:18px;margin-top:3px;flex:none;accent-color:var(--orange)}
+  .consent p{margin:0;font-size:12.5px;line-height:1.5;color:var(--ink)}
+  .consent label{display:inline;font-weight:400;color:inherit;font-size:inherit;font-family:inherit;letter-spacing:0;text-transform:none;margin:0}
+  .consent + .consent{margin-top:-6px}
+  .consent strong{font-weight:700}
+  .optin-title{font-family:Montserrat;font-weight:800;font-size:13px;color:var(--navy);margin:10px 0 8px}
+  .optin-title span{font-weight:500;color:var(--muted)}
+  .card .btn{width:100%;margin-top:4px}
+  .thanks{display:none;background:#eaf6ee;border:1px solid #bfe3ca;color:#1d5a32;padding:12px;border-radius:8px;margin-top:12px;font-size:14px}
+
+  /* Stats strip */
+  .strip{background:var(--orange);color:#fff}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:26px;padding-bottom:26px;text-align:center}
+  .strip strong{display:block;font-family:Montserrat;font-weight:900;font-size:28px;line-height:1.1}
+  .strip span{font-size:13px;font-weight:600;letter-spacing:.04em;opacity:.95}
+
+  /* Sections */
+  section{padding:96px 0}
+  section.dark{background:var(--navy);color:#fff}
+  section.soft{background:var(--soft)}
+  .section-head{max-width:760px;margin:0 0 44px}
+  .section-head.center{text-align:center;margin-left:auto;margin-right:auto}
+  .section-head h2{font-size:40px;font-weight:900;color:var(--navy)}
+  section.dark .section-head h2{color:#fff}
+  .section-head p{color:var(--muted);font-size:17px;margin:0}
+  section.dark .section-head p{color:#c3d0dc}
+
+  /* Flooring types */
+  .types{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+  .type{position:relative;background:var(--navy);color:#fff;border-radius:14px;padding:26px 20px 22px;min-height:150px;
+        display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;transition:transform .15s}
+  .type:hover{transform:translateY(-4px)}
+  .type::before{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;
+                background:rgba(240,122,42,.18)}
+  .type .num{position:absolute;top:18px;left:20px;font-family:Montserrat;font-weight:800;font-size:13px;color:var(--orange)}
+  .type h3{font-size:21px;font-weight:800;margin:0}
+  .type p{margin:4px 0 0;font-size:13px;color:#c3d0dc}
+
+  /* Showroom */
+  .showroom{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .photo{position:relative}
+  .photo::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:4px solid var(--orange);border-radius:18px}
+  .photo img{position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block;
+             box-shadow:0 24px 50px rgba(0,0,0,.35)}
+  .photo .badge{position:absolute;left:-18px;bottom:28px;background:var(--orange);color:#fff;border-radius:12px;
+                padding:14px 18px;font-family:Montserrat;font-weight:800;font-size:14px;line-height:1.25;box-shadow:0 12px 28px rgba(0,0,0,.3)}
+  .photo .badge small{display:block;font-weight:600;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.9}
+  .checks{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:12px}
+  .checks li{display:flex;gap:12px;align-items:flex-start;color:#d7e1ea}
+  .checks li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;
+                     display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;margin-top:1px}
+
+  /* Features */
+  .features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .feature{background:#fff;border-radius:14px;padding:28px 24px;box-shadow:0 6px 24px rgba(15,42,68,.08);position:relative}
+  .feature .n{font-family:Montserrat;font-weight:900;font-size:40px;color:var(--orange);line-height:1;display:block;margin-bottom:14px}
+  .feature h3{font-size:18px;color:var(--navy);font-weight:800}
+  .feature p{font-size:14px;color:var(--muted);margin:0}
+
+  /* Reviews */
+  .reviews{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center;background:var(--navy-2);
+           border-radius:20px;padding:44px 48px}
+  .rating{font-family:Montserrat;font-size:84px;font-weight:900;color:var(--orange);line-height:1}
+  .stars{color:var(--orange);font-size:22px;letter-spacing:4px}
+  .reviews h2{color:#fff;font-size:32px;font-weight:900;margin:0 0 6px}
+  .reviews p{color:#c3d0dc;margin:0}
+
+  /* SMS policy block */
+  .sms{max-width:860px;margin:0 auto;background:#fff;border-radius:14px;border-left:6px solid var(--orange);
+       box-shadow:0 6px 24px rgba(15,42,68,.08);padding:28px 32px}
+  .sms h2{font-size:22px;color:var(--navy);font-weight:800}
+  .sms p{margin:0 0 10px}
+
+  /* Footer */
+  footer{background:var(--navy-900);color:#b9c6d3;font-size:14px}
+  footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;padding-top:64px;padding-bottom:40px}
+  footer h4{color:#fff;margin:0 0 14px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+  footer h4.brandline{font-size:17px;letter-spacing:0;text-transform:none}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  footer a{color:#b9c6d3;text-decoration:none}
+  footer a:hover{color:var(--orange)}
+  .legal{border-top:1px solid rgba(255,255,255,.1);text-align:center;padding:18px 20px;font-size:12.5px}
+
+  @media (max-width:960px){
+    .hero::after{inset:0;opacity:.35}
+    .hero .wrap,.showroom{grid-template-columns:1fr}
+    .hero h1{font-size:42px}
+    .types{grid-template-columns:repeat(3,1fr)}
+    .features,.strip .wrap{grid-template-columns:1fr 1fr}
+    .reviews{grid-template-columns:1fr;text-align:center;padding:36px 28px}
+    footer .wrap{grid-template-columns:1fr 1fr}
+    .section-head h2{font-size:32px}
+    .head-phone{display:none}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 16px}
+    section{padding:64px 0}
+    .hero .wrap{padding-top:48px;padding-bottom:56px}
+    .hero h1{font-size:34px}
+    .grid2,.features,footer .wrap{grid-template-columns:1fr}
+    .types{grid-template-columns:repeat(2,1fr)}
+    header .btn,.brand span{display:none}
+    .photo::before{inset:14px -10px -14px 10px}
+    .photo .badge{left:10px}
+    .card{padding:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="logo"><img src="https://floorcoveringsinternational.com/img/upload/group-1_7.png" alt="Floor Coverings International Logo"></span>
+      <span>Jacksonville East</span>
+    </a>
+    <div class="head-right">
+      <a class="head-phone" href="tel:+19043640535"><small>Call us today</small>(904) 364-0535</a>
+      <a class="btn" href="#consult">Schedule Consult</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO + FORM -->
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Floor Coverings International</span>
+        <h1>Your local flooring advisors in <em>East Jacksonville, FL</em></h1>
+        <p class="lead">Carpet, laminate, vinyl, wood and tile — brought right to your door with our Mobile Flooring Showroom®.</p>
+        <div class="ctas">
+          <a class="btn" href="#consult">Schedule An In-Home Consultation</a>
+          <a class="btn ghost" href="tel:+19043640535">Call (904) 364-0535</a>
+        </div>
+        <ul class="facts">
+          <li><span class="ic">⏱</span><div><b>Hours</b>Mon – Fri 8:00 AM – 7:00 PM · Sat 10:00 AM – 2:00 PM · Sun Closed</div></li>
+          <li><span class="ic">⌖</span><div><b>Serving</b>Atlantic Beach, Jacksonville Beach, Jacksonville, Neptune Beach, FL</div></li>
+          <li><span class="ic">★</span><div><b>Locally Owned and Operated</b>Cristina &amp; Sean Rotolo</div></li>
+        </ul>
+      </div>
+
+      <form class="card" id="consult" onsubmit="return submitForm(event)">
+        <h2>Tell Us About Your Project</h2>
+        <p class="sub">Get your free, down-to-the-penny quote.</p>
+        <div class="grid2">
+          <div class="field"><label for="fn">First Name*</label><input id="fn" name="first_name" required autocomplete="given-name"></div>
+          <div class="field"><label for="ln">Last Name*</label><input id="ln" name="last_name" required autocomplete="family-name"></div>
+        </div>
+        <div class="field"><label for="em">Email*</label><input id="em" name="email" type="email" required autocomplete="email"></div>
+        <div class="grid2">
+          <div class="field"><label for="ph">Phone Number*</label><input id="ph" name="phone" type="tel" required autocomplete="tel"></div>
+          <div class="field"><label for="zip">ZIP/Postal Code*</label><input id="zip" name="zip" required autocomplete="postal-code"></div>
+        </div>
+        <div class="field"><label for="msg">How can we help you?</label><textarea id="msg" name="message"></textarea></div>
+
+        <div class="optin-title">Sign up for SMS Alerts <span>(optional)</span></div>
+        <div class="consent">
+          <input type="checkbox" id="sms_care" name="sms_customer_care" value="yes">
+          <p><label for="sms_care">I consent to receive text messages about <strong>appointment reminders, consultation scheduling, project updates, quotes and customer care</strong> from <strong>Floor Coverings International of Jacksonville East</strong> at the phone number I provided. I acknowledge that my consent is not a condition of purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply HELP for assistance or STOP to opt out of receiving messages.</label>
+          <a href="https://floorcoveringsinternational.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> &amp; <a href="https://floorcoveringsinternational.com/terms" target="_blank" rel="noopener">Terms</a>.</p>
+        </div>
+        <div class="consent">
+          <input type="checkbox" id="sms_marketing" name="sms_marketing" value="yes">
+          <p><label for="sms_marketing">I consent to receive <strong>marketing text messages</strong>, such as <strong>promotional offers, discounts and sales events</strong>, from <strong>Floor Coverings International of Jacksonville East</strong> at the phone number I provided, including messages sent via autodialer. I understand that my consent is not a condition of purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply HELP for assistance or STOP to opt out of receiving messages.</label>
+          <a href="https://floorcoveringsinternational.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> &amp; <a href="https://floorcoveringsinternational.com/terms" target="_blank" rel="noopener">Terms</a>.</p>
+        </div>
+        <div class="optin-title">Sign up for Email and Phone Calls <span>(optional)</span></div>
+        <div class="consent">
+          <input type="checkbox" id="email_calls" name="email_calls_consent" value="yes">
+          <p><label for="email_calls">I agree to receive marketing emails and phone calls.</label></p>
+        </div>
+
+        <button class="btn" type="submit">Contact Us</button>
+        <div class="thanks" id="thanks">Thank you! A member of our Jacksonville East team will reach out shortly.</div>
+      </form>
+    </div>
+  </div>
+
+  <!-- STATS STRIP -->
+  <div class="strip">
+    <div class="wrap">
+      <div><strong>4.95★</strong><span>Average customer rating</span></div>
+      <div><strong>$0</strong><span>Free down-to-the-penny quote</span></div>
+      <div><strong>1 Year+</strong><span>Installation warranty</span></div>
+      <div><strong>Financing</strong><span>Available (approved credit)</span></div>
+    </div>
+  </div>
+
+  <!-- FLOORING TYPES -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Flooring</span>
+        <h2>Find a foundation to support your home's style</h2>
+        <p>Explore flooring options for every room, budget and lifestyle.</p>
+      </div>
+      <div class="types">
+        <div class="type"><span class="num">01</span><h3>Carpet</h3><p>Soft &amp; family-friendly</p></div>
+        <div class="type"><span class="num">02</span><h3>Laminate</h3><p>Durable &amp; budget-smart</p></div>
+        <div class="type"><span class="num">03</span><h3>Vinyl</h3><p>Water-resistant &amp; versatile</p></div>
+        <div class="type"><span class="num">04</span><h3>Wood</h3><p>Timeless &amp; warm</p></div>
+        <div class="type"><span class="num">05</span><h3>Tile</h3><p>Classic &amp; easy to clean</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOBILE SHOWROOM -->
+  <section class="dark">
+    <div class="wrap showroom">
+      <div class="photo">
+        <img src="https://floorcoveringsinternational.com/img/upload/kitchen-fci-1.jpg" alt="Kitchen with new flooring by Floor Coverings International">
+        <div class="badge"><small>We come to you</small>Mobile Flooring<br>Showroom®</div>
+      </div>
+      <div>
+        <span class="eyebrow">In-home consultation</span>
+        <h2 style="font-size:40px;font-weight:900;color:#fff">Bringing the Floors to You with Our Mobile Flooring Showroom®</h2>
+        <ul class="checks">
+          <li>See samples in your own lighting, next to your own furniture and walls.</li>
+          <li>Hundreds of options brought right to your home — no showroom trips needed.</li>
+          <li>Professional installation using manufacturer-approved methods.</li>
+        </ul>
+        <a class="btn" href="#consult">Schedule An In-Home Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="soft">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Why us</span>
+        <h2>Why homeowners choose us</h2>
+      </div>
+      <div class="features">
+        <div class="feature"><span class="n">01</span><h3>Free Down to the Penny Quote</h3><p>Clear, detailed pricing with no surprises.</p></div>
+        <div class="feature"><span class="n">02</span><h3>Locally Owned and Operated</h3><p>Your neighbors in East Jacksonville, proud to serve our community.</p></div>
+        <div class="feature"><span class="n">03</span><h3>Our Follow-Up Guarantee</h3><p>We check in after your project to make sure everything is right.</p></div>
+        <div class="feature"><span class="n">04</span><h3>Homeowner Satisfaction</h3><p>Manufacturer-approved installation, a minimum 1-year installation warranty, and financing available (approved credit).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section>
+    <div class="wrap">
+      <div class="reviews">
+        <div>
+          <div class="rating">4.95</div>
+          <div class="stars" aria-label="4.95 out of 5 stars">★★★★★</div>
+        </div>
+        <div>
+          <h2>Our Reviews and Happy Customers</h2>
+          <p>Average customer rating from homeowners across East Jacksonville and the Beaches.</p>
+        </div>
+        <a class="btn" href="#consult">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMS TERMS -->
+  <section class="soft" id="sms-terms">
+    <div class="wrap">
+      <div class="sms">
+        <h2>SMS Messaging Terms</h2>
+        <p>Floor Coverings International of Jacksonville East offers two separate, optional text message programs. You may sign up for either, both, or neither — consent is not a condition of purchase.</p>
+        <p><strong>Customer Care Messages:</strong> appointment reminders, consultation scheduling, project updates, quotes and customer care.</p>
+        <p><strong>Marketing Messages:</strong> promotional offers, discounts and sales events, which may be sent via autodialer.</p>
+        <p>Msg &amp; data rates may apply. Msg frequency varies. Reply <strong>STOP</strong> to opt out at any time; reply <strong>HELP</strong> for assistance or call <a href="tel:+19043640535">(904) 364-0535</a>. No mobile information will be shared with third parties/affiliates for marketing/promotional purposes.</p>
+        <p>See our <a href="https://floorcoveringsinternational.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://floorcoveringsinternational.com/terms" target="_blank" rel="noopener">Terms</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4 class="brandline">Floor Coverings International of Jacksonville East, FL</h4>
+      <p style="margin:0 0 8px">11318 Distribution Ave West #6<br>Jacksonville FL 32256</p>
+      <p style="margin:0 0 8px"><a href="tel:+19043640535">(904) 364-0535</a></p>
+      <p style="margin:0">Mon – Fri 8:00 AM – 7:00 PM<br>Sat 10:00 AM – 2:00 PM · Sun Closed</p>
+    </div>
+    <div>
+      <h4>Flooring</h4>
+      <ul><li>Carpet</li><li>Laminate</li><li>Vinyl</li><li>Wood</li><li>Tile</li></ul>
+    </div>
+    <div>
+      <h4>Service Areas</h4>
+      <ul><li>Atlantic Beach</li><li>Jacksonville Beach</li><li>Jacksonville</li><li>Neptune Beach</li></ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/flooringjacksonvilleeast" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/fcijaxeast/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://floorcoveringsinternational.com/locations/us/fl/east-jacksonville/" target="_blank" rel="noopener">Official Location Page</a></li>
+        <li><a href="#sms-terms">SMS Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">© 2026 Floor Coverings International of Jacksonville East, FL. Each franchise is independently owned and operated.</div>
+</footer>
+
+<script>
+  function submitForm(e){
+    e.preventDefault();
+    // TODO: connect to your form handler / CRM before going live.
+    document.getElementById('thanks').style.display='block';
+    e.target.querySelector('button[type=submit]').disabled = true;
+    return false;
+  }
+</script>
+</body>
+</html>
